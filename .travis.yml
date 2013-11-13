@@ -2,7 +2,7 @@ language: ruby
 build_environment: ubuntu1304
 env:
   global:
-    - DB=mysql
+    - DB=psql
     - TRAVIS=true
   matrix:
     - TASK=spinach
@@ -13,6 +13,8 @@ before_install:
 branches:
   only:
     - 'master'
+    services:
+    - postgresql
 rvm:
   - 2.0.0
 before_script:
