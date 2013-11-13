@@ -13,8 +13,7 @@ before_install:
 branches:
   only:
     - 'master'
-services:
-  - psql
+
 rvm:
   - 2.0.0
 before_script:
