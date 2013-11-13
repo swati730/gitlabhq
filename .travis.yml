@@ -15,8 +15,6 @@ branches:
     - 'master'
 rvm:
   - 2.0.0
-services:
-  - mysql
 before_script:
   - "cp config/database.yml.$DB config/database.yml"
   - "cp config/gitlab.yml.example config/gitlab.yml"
