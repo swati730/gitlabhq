@@ -2,7 +2,7 @@ language: ruby
 build_environment: ubuntu1304
 env:
   global:
-    - DB=psql
+    - DB=myql
     - TRAVIS=true
   matrix:
     - TASK=spinach
